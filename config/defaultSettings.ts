@@ -4,14 +4,13 @@ const Settings: LayoutSettings & {
   pwa?: boolean;
   logo?: string;
 } = {
-  navTheme: 'light' || 'dark',
-  // 拂晓蓝
+  navTheme: 'light',
   primaryColor: '#1890ff',
   layout: 'mix',
   contentWidth: 'Fluid',
   fixedHeader: true,
   fixSiderbar: true,
-  // colorWeak: false,
+  colorWeak: false,
   title: 'PC后台模版',
   pwa: false,
   logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',

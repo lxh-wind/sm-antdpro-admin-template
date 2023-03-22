@@ -1,0 +1,41 @@
+@import '~antd/es/style/themes/default.less';
+
+@primary-color: #1890ff;
+@primary-color-hover: color(~`colorPalette('@{primary-color}', 5) `);
+
+// Layout
+@layout-body-background: #f6f6f6;
+@layout-header-color: #333;
+@layout-header-background: #fff;
+
+// Pro-Layout
+@pro-layout-header-height: 68px;
+
+// Base Scaffolding Variables
+@border-radius-base: 4px;
+
+// Menu
+@menu-inline-submenu-bg: #fff;
+
+// Card
+@card-radius: 10px;
+
+// Table
+@table-header-bg: #f8f8f8;
+@table-header-color: #666;
+@table-border-radius-base: 0;
+
+.multiline(@line: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
+.singleline {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

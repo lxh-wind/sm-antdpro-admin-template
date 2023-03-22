@@ -26,7 +26,16 @@ export default defineConfig({
   // umi routes: https://umijs.org/docs/routing
   routes,
   access: {},
-  // Theme for antd: https://ant.design/docs/react/customize-theme-cn
+  // // Theme for antd: https://ant.design/docs/react/customize-theme-cn
+  // theme: {
+  //   // 如果不想要 configProvide 动态设置主题需要把这个设置为 default
+  //   // 只有设置为 variable， 才能使用 configProvide 动态设置主色调
+  //   // https://ant.design/docs/react/customize-theme-variable-cn
+  //   // 'root-entry-name': 'default',
+  //   // 'primary-color': defaultSettings.primaryColor,
+  //   'primary-color': defaultSettings.primaryColor,
+  //   'blue-base': defaultSettings.primaryColor,
+  // },
   theme: {
     // 如果不想要 configProvide 动态设置主题需要把这个设置为 default
     // 只有设置为 variable， 才能使用 configProvide 动态设置主色调
@@ -41,6 +50,11 @@ export default defineConfig({
   proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {
     basePath: '/',
+  },
+  lessLoader: {
+    modifyVars: {
+      hack: `true; @import "~@/styles/variables/index.less";`,
+    },
   },
   // Fast Refresh 热更新
   fastRefresh: {},

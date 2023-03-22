@@ -1,0 +1,23 @@
+.g-input--sm {
+  max-width: 150px;
+}
+
+// 表单单项不限制宽度
+.no-max-width {
+  &.ant-form-item {
+    .ant-form-item-control-input {
+      max-width: 100%;
+    }
+  }
+}
+
+// 表单所有项都不限制宽度
+.form-unlimited-width {
+  &.ant-form {
+    .ant-form-item {
+      .ant-form-item-control-input {
+        max-width: 100%;
+      }
+    }
+  }
+}
