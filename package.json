@@ -1,8 +1,8 @@
 {
-  "name": "ant-design-pro",
-  "version": "5.2.0",
+  "name": "web-pc-admin",
+  "version": "0.0.1",
   "private": true,
-  "description": "An out-of-box UI solution for enterprise applications",
+  "description": "web pc front-end template",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",
@@ -58,7 +58,6 @@
     "@umijs/route-utils": "^2.0.0",
     "antd": "^4.20.0",
     "classnames": "^2.3.0",
-    "commitlint-config-cz": "^0.13.3",
     "lodash": "^4.17.0",
     "moment": "^2.29.0",
     "omit.js": "^2.0.2",
@@ -91,6 +90,7 @@
     "@umijs/preset-ant-design-pro": "^1.3.0",
     "@umijs/preset-dumi": "^1.1.0",
     "@umijs/preset-react": "^2.1.0",
+    "commitlint-config-cz": "^0.13.3",
     "cross-env": "^7.0.0",
     "cross-port-killer": "^1.3.0",
     "cz-customizable": "^7.0.0",
